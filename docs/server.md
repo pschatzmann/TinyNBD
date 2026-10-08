@@ -31,7 +31,7 @@ To add your own device, subclass `BlockDevice` (byte-addressed) or `SectorBlockD
 #include <WiFi.h>
 #include "NBD_SD.h"
 
-WiFiServer wifiServer(NBD_DEFAULT_PORT);
+WiFiServer wifiServer(NBD_DEFAULT_PORT); // 10809
 NBDServer<WiFiServer> nbd_server(wifiServer);
 SDBlockDevice sdDisk(SD);
 
