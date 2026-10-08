@@ -6,7 +6,7 @@
 #include "WiFi.h"
 #include "NBD.h"
 
-WiFiServer wifiServer(NBD_DEFAULT_PORT);
+WiFiServer wifiServer(NBD_DEFAULT_PORT); // 10809
 NBDServer<WiFiServer> nbd_server(wifiServer);
 DesktopFileBlockDevice imageDisk("disk.img", 64 * 1024 * 1024);
 

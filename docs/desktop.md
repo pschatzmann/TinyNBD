@@ -81,7 +81,7 @@ Desktop sketches look the same as on the ESP32. The emulator's `WiFiServer` need
 #include "WiFi.h"
 #include "NBD.h"
 
-WiFiServer wifiServer(NBD_DEFAULT_PORT);
+WiFiServer wifiServer(NBD_DEFAULT_PORT); // 10809
 NBDServer<WiFiServer> nbd_server(wifiServer);
 DesktopFileBlockDevice imageDisk("disk.img", 64 * 1024 * 1024);
 

@@ -4,8 +4,8 @@
  * Linux: sudo nbd-client <ip> 10809 /dev/nbd0 -N image
  *        sudo mkfs.ext4 /dev/nbd0
  */
-#include <WiFi.h>
 
+#include <WiFi.h>
 #include "NBD_SD.h"
 
 const char* ssid = "your-ssid";
@@ -13,7 +13,7 @@ const char* password = "your-password";
 const char* imagePath = "/disk.img";
 const size_t imageSize = 8 * 1024 * 1024;
 
-WiFiServer wifiServer(NBD_DEFAULT_PORT);
+WiFiServer wifiServer(NBD_DEFAULT_PORT); // 10809
 NBDServer<WiFiServer> nbd_server(wifiServer);
 File imageFile;
 SDFileBlockDevice imageDisk(imageFile);
