@@ -1,0 +1,1 @@
+/usr/bin/c++ -g "CMakeFiles/nbd-server-image-desktop.dir/nbd-server-image-desktop/nbd-server-image-desktop.ino.o" -o nbd-server-image-desktop  ../../emulator/libarduino_emulator.a 

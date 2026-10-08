@@ -1,0 +1,9 @@
+image: nbd://127.0.0.1:10809
+file format: raw
+virtual size: 4 MiB (4194304 bytes)
+disk size: unavailable
+Child node '/file':
+    filename: nbd://127.0.0.1:10809
+    protocol type: nbd
+    file length: 4 MiB (4194304 bytes)
+    disk size: unavailable

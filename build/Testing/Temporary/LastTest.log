@@ -1,0 +1,80 @@
+Start testing: Oct 08 10:15 CEST
+----------------------------------------------------------
+1/2 Testing: nbd-qemu
+1/2 Test: nbd-qemu
+Command: "/home/pschatzmann/Development/Arduino/libraries/arduino-mbd/tests/qemu-test.sh" "/home/pschatzmann/Development/Arduino/libraries/arduino-mbd/build/tests/nbd-test"
+Directory: /home/pschatzmann/Development/Arduino/libraries/arduino-mbd/build/tests
+"nbd-qemu" start time: Oct 08 10:15 CEST
+Output:
+----------------------------------------------------------
+PASS: size
+PASS: write & compare ram
+PASS: write & compare image
+PASS: unaligned io
+PASS: trim
+PASS: read-only read
+PASS: read-only write
+PASS: unknown export
+PASS: default export
+<end of output>
+Test time =   1.11 sec
+----------------------------------------------------------
+Test Passed.
+"nbd-qemu" end time: Oct 08 10:15 CEST
+"nbd-qemu" time elapsed: 00:00:01
+----------------------------------------------------------
+
+2/2 Testing: nbd-client
+2/2 Test: nbd-client
+Command: "/home/pschatzmann/Development/Arduino/libraries/arduino-mbd/tests/client-test.sh" "/home/pschatzmann/Development/Arduino/libraries/arduino-mbd/build/tests/nbd-test" "/home/pschatzmann/Development/Arduino/libraries/arduino-mbd/build/tests/nbd-client-test"
+Directory: /home/pschatzmann/Development/Arduino/libraries/arduino-mbd/build/tests
+"nbd-client" start time: Oct 08 10:15 CEST
+Output:
+----------------------------------------------------------
+PASS: c.connect(SERVER_HOST, SERVER_PORT, "ram")
+PASS: c.isConnected()
+PASS: c.size() == 4u * 1024 * 1024
+PASS: !c.isReadOnly()
+PASS: c.canFlush()
+PASS: c.preferredBlockSize() == 4096
+PASS: c.minBlockSize() == 1
+PASS: c.maxPayload() == 32u * 1024 * 1024
+PASS: c.write(1000, out, sizeof(out))
+PASS: c.read(1000, in, sizeof(in))
+PASS: memcmp(out, in, sizeof(out)) == 0
+PASS: c.flush()
+PASS: !c.isConnected()
+PASS: c.connect(SERVER_HOST, SERVER_PORT)
+PASS: c.size() == 4u * 1024 * 1024
+PASS: c.connect(SERVER_HOST, SERVER_PORT, "ro")
+PASS: c.isReadOnly()
+PASS: c.read(0, in, 512)
+PASS: !c.write(0, in, 512)
+PASS: !c.connect(SERVER_HOST, SERVER_PORT, "does-not-exist")
+PASS: !c.isConnected()
+PASS: c.connect(SERVER_HOST, SERVER_PORT, "sect")
+PASS: dev.begin()
+PASS: dev.size() == 1024u * 1024
+PASS: dev.preferredBlockSize() == 4096
+PASS: !dev.canTrim()
+PASS: dev.write(3000, out, 5000)
+PASS: dev.read(3000, in, 5000)
+PASS: memcmp(out, in, 5000) == 0
+PASS: dev.writeZeroes(3500, 1000)
+PASS: dev.read(3500, in, 1000)
+PASS: memcmp(out, in, 1000) == 0
+PASS: dev.flush()
+PASS: c.connect(SERVER_HOST, SERVER_PORT, "image")
+PASS: dev.write(0, big, sizeof(big))
+PASS: dev.read(0, back, sizeof(back))
+PASS: memcmp(big, back, sizeof(big)) == 0
+ALL PASSED (0 failures)
+<end of output>
+Test time =   6.55 sec
+----------------------------------------------------------
+Test Passed.
+"nbd-client" end time: Oct 08 10:15 CEST
+"nbd-client" time elapsed: 00:00:06
+----------------------------------------------------------
+
+End testing: Oct 08 10:15 CEST

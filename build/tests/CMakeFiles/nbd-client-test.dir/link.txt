@@ -1,0 +1,1 @@
+/usr/bin/c++ -g "CMakeFiles/nbd-client-test.dir/nbd-client-test/nbd-client-test.ino.o" -o nbd-client-test  ../emulator/libarduino_emulator.a 
