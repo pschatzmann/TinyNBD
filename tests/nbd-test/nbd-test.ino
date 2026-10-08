@@ -3,6 +3,7 @@
  * device (read-modify-write), a read-only export and an image file.
  */
 #include "WiFi.h"
+#define NBD_MAX_EXPORTS 5
 #include "NBD.h"
 
 // sector device in RAM to test unaligned access
@@ -29,6 +30,9 @@ NBDServer<WiFiServer> nbd_server(wifiServer);
 MemoryBlockDevice ramDisk(4 * 1024 * 1024);
 RamSectorDevice sectorDisk;
 DesktopFileBlockDevice imageDisk("nbd-test.img", 4 * 1024 * 1024);
+// page cache in front of the sector device
+RamSectorDevice cachedBacking;
+CachedBlockDevice cachedDisk(cachedBacking, 64 * 1024, 4096, false);
 
 void setup() {
   Serial.begin(115200);
@@ -37,6 +41,7 @@ void setup() {
   nbd_server.addExport("sect", sectorDisk, false, "sector disk");
   nbd_server.addExport("ro", ramDisk, true);
   nbd_server.addExport("image", imageDisk, false, "image file");
+  nbd_server.addExport("cached", cachedDisk, false, "cached sector disk");
   if (!nbd_server.begin()) {
     Serial.println("Could not start nbd server");
     exit(1);

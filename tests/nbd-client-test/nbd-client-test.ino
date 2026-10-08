@@ -124,6 +124,24 @@ void setup() {
     c.disconnect();
   }
 
+  // cached export: write, overwrite and read back through the server cache
+  {
+    WiFiClient wifi;
+    nbd::NBDClient c(wifi);
+    CHECK(c.connect(SERVER_HOST, SERVER_PORT, "cached"));
+    nbd::NBDClientSectorBlockDevice dev(c);
+    fill(out, 5000, 9);
+    CHECK(dev.write(7000, out, 5000));
+    memset(in, 0, 5000);
+    CHECK(dev.read(7000, in, 5000));
+    CHECK(memcmp(out, in, 5000) == 0);
+    // read again: served from cache pages, must still match
+    memset(in, 0, 5000);
+    CHECK(dev.read(7000, in, 5000));
+    CHECK(memcmp(out, in, 5000) == 0);
+    c.disconnect();
+  }
+
   printf("%s (%d failures)\n", failures ? "FAILED" : "ALL PASSED", failures);
   exit(failures ? 1 : 0);
 }

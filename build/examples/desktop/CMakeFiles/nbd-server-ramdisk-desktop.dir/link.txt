@@ -1,1 +1,0 @@
-/usr/bin/c++ -g "CMakeFiles/nbd-server-ramdisk-desktop.dir/nbd-server-ramdisk-desktop/nbd-server-ramdisk-desktop.ino.o" -o nbd-server-ramdisk-desktop  ../../emulator/libarduino_emulator.a 

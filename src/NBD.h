@@ -7,6 +7,7 @@
  * library) instead.
  */
 #include "nbd-server/BlockDevice.h"
+#include "nbd-server/CachedBlockDevice.h"
 #include "nbd-server/ESP32PartitionBlockDevice.h"
 #include "nbd-server/FileBlockDevice.h"
 #include "nbd-server/MemoryBlockDevice.h"
