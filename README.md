@@ -1,6 +1,7 @@
 # Tiny Network Block Device (NBD)
 
 [![Arduino Library](https://img.shields.io/badge/Arduino-Library-blue.svg)](https://www.arduino.cc/reference/en/libraries/)
+[![Build: CMake](https://img.shields.io/badge/Build-CMake-064F8C.svg?logo=cmake)](CMakeLists.txt)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 __NBD__ is a simple TCP protocol that makes a remote disk look like a local one. The server exports raw storage as a list of fixed-size blocks, and the client reads and writes these blocks by offset. Unlike a network file system such as SMB or NFS, the server knows nothing about files: the client sees a plain disk (e.g. `/dev/nbd0` on Linux) and can partition it, format it and mount it with any file system. nbd is built into the Linux kernel and is supported by qemu and nbdkit.
