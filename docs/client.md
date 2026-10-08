@@ -1,6 +1,6 @@
-# nbd Client
+# NBD Client
 
-`NBDClient` connects to an nbd server (for example another Arduino running this library, or `nbd-server` on a desktop) and reads and writes its exports. It works with any Arduino `Client` (`WiFiClient`, `NetworkClient`, `EthernetClient`).
+`NBDClient` connects to an NBD server (for example another Arduino running this library, or `nbd-server` on a desktop) and reads and writes its exports. It works with any Arduino `Client` (`WiFiClient`, `NetworkClient`, `EthernetClient`).
 
 ## Usage
 
