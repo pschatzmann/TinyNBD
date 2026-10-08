@@ -36,7 +36,7 @@ lib_deps = https://github.com/pschatzmann/arduino-nbd.git
 
 ## Usage
 
-Server and client examples are in [examples/](examples/). See the documents below for details.
+Server and client examples are in [examples/](examples/). See the documents below for details. [examples/nbd-client-tinyfatfs](examples/nbd-client-tinyfatfs/nbd-client-tinyfatfs.ino) mounts a remote export as a FAT filesystem using the [TinyFATFS](https://github.com/pschatzmann/TinyFATFS) library's `NBDClientIO` driver.
 
 ## Documentation
 

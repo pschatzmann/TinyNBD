@@ -84,6 +84,33 @@ The adapter doesn't own the client, so keep the `NBDClient` alive while the devi
 
 See `examples/nbd-client/nbd-client.ino`.
 
+## Using a remote export as a FAT filesystem (TinyFATFS)
+
+The [TinyFATFS](https://github.com/pschatzmann/TinyFATFS) library provides an `NBDClientIO` driver that mounts an nbd export as a FAT filesystem, using `NBDClient` as the transport. This lets an Arduino read and write files on a remote export with the familiar `SD`/`File` API, instead of raw sector access.
+
+```cpp
+#include <WiFi.h>
+#include "fatfs.h"
+#include "driver/NBDClientIO.h"
+
+WiFiClient wifi;
+nbd::NBDClient nbd_client(wifi);
+// host string must stay valid while the driver is in use
+NBDClientIO drv{nbd_client, "192.168.1.10", nbd::NBD_DEFAULT_PORT, "ram"};
+File file;
+
+void setup() {
+  SD.begin(drv);  // connects and mounts the export
+  file = SD.open("/test.txt", FILE_WRITE);
+  file.println("hello");
+  file.close();
+}
+
+void loop() {}
+```
+
+The export must already contain a FAT filesystem; format it once (e.g. with `SD.format(drv)` or `mkfs.vfat` through `nbd-client` on Linux) before mounting an empty export. A read-only export is reported as write protected and file writes fail. See `examples/nbd-client-tinyfatfs/nbd-client-tinyfatfs.ino` for a full example, and the TinyFATFS README for its other drivers.
+
 ## Related documents
 
 - [NBD Server](server.md): exporting storage from an Arduino.
