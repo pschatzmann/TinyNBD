@@ -10,7 +10,7 @@ This library implements a header-only [NBD (Network Block Device)](https://githu
 
 With it, a Linux machine (or qemu, nbdkit, …) can use storage attached to the microcontroller as a local block device, and an Arduino can read and write an nbd export on another machine.
 
-This makes nbd an easy and efficient way to share static file content over the network: export the storage read-only, and several clients can mount it at the same time. The microcontroller only serves blocks, while each client does the file system work and caches what it has read. Only one client at a time may mount an export with write access, because clients don't know about each other's changes.
+This makes nbd an easy and efficient way to share static file content over the network: export the storage read-only, and several clients can mount it at the same time. The microcontroller only serves blocks, while each client does the file system work and caches what it has read. Only one client at a time may mount an export with write access, because clients don't know about each other's changes. [LittleFS](docs/littlefs.md) describes a ready-made setup that shares files uploaded with the sketch.
 
 - [NBD Server](docs/server.md): exporting storage from an Arduino, block devices, example and Linux/qemu client usage.
 - [NBD Client](docs/client.md): reading and writing an nbd export from an Arduino.
@@ -48,6 +48,7 @@ Server and client examples are in [examples/](examples/). See the documents belo
 - [NBD Client](docs/client.md): API and example for reading and writing an export from an Arduino.
 - [Configuration](docs/configuration.md): compile-time limits, buffer size, timeout and namespace options.
 - [TinyFATFS](docs/tinyfatfs.md): how the TinyFATFS library relates to this one: `NBDClientIO` (NBD as a FAT drive) and `FatIOBlockDevice` (a FAT drive as an NBD export).
+- [LittleFS](docs/littlefs.md): sharing static files from a LittleFS flash partition that is uploaded with the sketch (recommended, read-only), and mounting an export with `NBDLittleFS` or littlefs-fuse.
 - [Usage Notes](docs/notes.md): SD card access, flash wear, performance and security. Read this before using the library.
 - [Accessing an Export from Several Machines](docs/multiple-clients.md): what is safe when several clients share an export, and how to set this up.
 - [Running on the Desktop](docs/desktop.md): running the library on Linux, macOS and Windows with the Arduino Emulator; CMake build, desktop examples, tests and `DesktopFileBlockDevice`.

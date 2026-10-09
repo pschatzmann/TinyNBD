@@ -136,7 +136,7 @@ void setup() {
 void loop() {}
 ```
 
-The block size must match an existing filesystem. The library uses littlefs v2.5 (on-disk version 2.0), so it can't mount filesystems created with on-disk version 2.1, e.g. by the LittleFS of the ESP32 core. See `examples/nbd-client-littlefs/nbd-client-littlefs.ino` for a full example.
+The block size must match an existing filesystem. The library uses littlefs v2.5 (on-disk version 2.0), so it can't mount filesystems created with on-disk version 2.1, e.g. by the LittleFS of the ESP32 core. See `examples/nbd-client-littlefs/nbd-client-littlefs.ino` for a full example and [LittleFS](littlefs.md) for details.
 
 ## Related documents
 
