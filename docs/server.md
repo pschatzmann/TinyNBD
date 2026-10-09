@@ -63,13 +63,29 @@ sudo modprobe nbd
 ```
 
 ```bash
-nbd-client -l 192.168.1.50                      # list exports
-sudo nbd-client 192.168.1.50 10809 /dev/nbd0 -N sd
-sudo mount /dev/nbd0p1 /mnt
+# List exports offered by the ESP32
+sudo nbd-client -l 192.168.1.33
+
+# Connect to the RAM disk
+sudo nbd-client 192.168.1.33 10809 /dev/nbd0 -N ram
+
+# Create a mount point
+sudo mkdir -p /mnt/nbd
+
+# If no format: Format as FAT32 ONLY if the disk is empty and disposable
+sudo mkfs.vfat -F 32 /dev/nbd0
+
+# Mount with permissions for your normal user
+sudo mount -t vfat -o uid=$(id -u),gid=$(id -g) /dev/nbd0 /mnt/nbd
+
 ...
-sudo umount /mnt
+# Release MBD
+sudo umount /mnt/nbd
 sudo nbd-client -d /dev/nbd0
+
 ```
+
+___Important___: Skip mkfs.vfat if you have already formatted the disk and want to preserve its files. Your earlier df output showed an approximately 1 MB filesystem.
 
 The qemu tools (`qemu-img`, `qemu-nbd`, `qemu-io`) also work as clients. They are in the `qemu-utils` package and don't need the kernel module:
 
