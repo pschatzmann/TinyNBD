@@ -45,6 +45,7 @@ Server and client examples are in [examples/](examples/). See the documents belo
 - [NBD Server](docs/server.md): exporting storage, block devices, server example and Linux/qemu clients.
 - [NBD Client](docs/client.md): API and example for reading and writing an export from an Arduino.
 - [Configuration](docs/configuration.md): compile-time limits, buffer size, timeout and namespace options.
+- [TinyFATFS](docs/tinyfatfs.md): how the TinyFATFS library relates to this one: `NBDClientIO` (NBD as a FAT drive) and `FatIOBlockDevice` (a FAT drive as an NBD export).
 - [Usage Notes](docs/notes.md): SD card access, flash wear, performance and security. Read this before using the library.
 - [Accessing an Export from Several Machines](docs/multiple-clients.md): what is safe when several clients share an export, and how to set this up.
 - [Running on the Desktop](docs/desktop.md): running the library on Linux, macOS and Windows with the Arduino Emulator; CMake build, desktop examples, tests and `DesktopFileBlockDevice`.
