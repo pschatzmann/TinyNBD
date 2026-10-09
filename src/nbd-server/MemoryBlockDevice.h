@@ -2,13 +2,16 @@
 #include "BlockDevice.h"
 #if defined(ESP32)
 #include "esp_heap_caps.h"
+#elif defined(ARDUINO_ARCH_RP2040) && defined(RP2350_PSRAM_CS)
+#include <Arduino.h>  // pcalloc() on RP2350 boards with PSRAM
 #endif
 
 namespace nbd {
 
 /**
  * @brief RAM disk. Either uses a buffer provided by the caller or allocates
- * the memory in begin() (on the ESP32 PSRAM is preferred if available).
+ * the memory in begin() (on the ESP32 and RP2350 PSRAM is preferred if
+ * available).
  */
 class MemoryBlockDevice : public BlockDevice {
  public:
@@ -32,6 +35,9 @@ class MemoryBlockDevice : public BlockDevice {
 #if defined(ESP32)
       data = (uint8_t*)heap_caps_calloc(1, data_size,
                                         MALLOC_CAP_SPIRAM | MALLOC_CAP_8BIT);
+#elif defined(ARDUINO_ARCH_RP2040) && defined(RP2350_PSRAM_CS)
+      // free() releases PSRAM blocks as well
+      data = (uint8_t*)pcalloc(1, data_size);
 #endif
       if (data == nullptr) data = (uint8_t*)calloc(1, data_size);
       owns_data = data != nullptr;

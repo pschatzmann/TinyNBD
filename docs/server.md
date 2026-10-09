@@ -16,7 +16,7 @@ nbd (Network Block Device) is a simple TCP protocol that makes a remote disk loo
 
 | Class | Header | Description |
 |---|---|---|
-| `MemoryBlockDevice` | `NBD.h` | RAM disk (PSRAM preferred on ESP32) or a user-provided / const buffer |
+| `MemoryBlockDevice` | `NBD.h` | RAM disk (PSRAM preferred on ESP32 and RP2350) or a user-provided / const buffer |
 | `ESP32PartitionBlockDevice` | `NBD.h` | ESP32 flash data partition (e.g. `"spiffs"`, `"ffat"`) |
 | `FileBlockDevice<FileT>` | `NBD.h` | Disk image file (any File-like class) |
 | `SDRawBlockDevice<SDT>` | `NBD.h` | Whole SD card via `readRAW()`/`writeRAW()` |

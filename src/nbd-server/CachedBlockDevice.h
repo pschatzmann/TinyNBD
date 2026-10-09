@@ -12,6 +12,8 @@
 
 #if defined(ESP32) && defined(BOARD_HAS_PSRAM)
 #include <esp32-hal-psram.h>
+#elif defined(ARDUINO_ARCH_RP2040) && defined(RP2350_PSRAM_CS)
+#include <Arduino.h>  // pmalloc() on RP2350 boards with PSRAM
 #endif
 
 namespace nbd {
@@ -162,6 +164,9 @@ class CachedBlockDevice : public BlockDevice {
   void* allocPool(size_t n) {
 #if defined(ESP32) && defined(BOARD_HAS_PSRAM)
     if (use_psram) return ps_malloc(n);
+#elif defined(ARDUINO_ARCH_RP2040) && defined(RP2350_PSRAM_CS)
+    // free() releases PSRAM blocks as well
+    if (use_psram) return pmalloc(n);
 #endif
     (void)use_psram;
     return malloc(n);
