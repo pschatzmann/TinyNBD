@@ -19,17 +19,33 @@ class SDRawBlockDevice : public SectorBlockDevice {
   explicit SDRawBlockDevice(SDT& sd, bool readOnly = false)
       : sd(sd), read_only(readOnly) {}
 
-  bool begin() override { return sectorSize() > 0 && sectorCount() > 0; }
+  bool begin() override {
+    // the geometry is queried once: the driver calls can be slow (e.g.
+    // SD_MMC.numSectors() queries the file system) and size() is needed for
+    // each request
+    sector_size = (uint32_t)sd.sectorSize();
+    sector_count = querySectorCount();
+    return sector_size > 0 && sector_count > 0;
+  }
 
-  uint32_t sectorSize() override { return (uint32_t)sd.sectorSize(); }
+  uint32_t sectorSize() override {
+    return sector_size > 0 ? sector_size : (uint32_t)sd.sectorSize();
+  }
 
-  uint64_t sectorCount() override { return (uint64_t)sd.numSectors(); }
+  uint64_t sectorCount() override {
+    return sector_count > 0 ? sector_count : querySectorCount();
+  }
 
   bool isReadOnly() override { return read_only; }
 
  protected:
   SDT& sd;
   bool read_only;
+  uint32_t sector_size = 0;
+  uint64_t sector_count = 0;
+
+  /// Number of sectors reported by the driver
+  virtual uint64_t querySectorCount() { return (uint64_t)sd.numSectors(); }
 
   bool readSectors(uint64_t sector, uint8_t* data, size_t count) override {
     const uint32_t ss = sectorSize();

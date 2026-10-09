@@ -111,6 +111,33 @@ void loop() {}
 
 The export must already contain a FAT filesystem; format it once (e.g. with `SD.format(drv)` or `mkfs.vfat` through `nbd-client` on Linux) before mounting an empty export. A read-only export is reported as write protected and file writes fail. See `examples/nbd-client-tinyfatfs/nbd-client-tinyfatfs.ino` for a full example, and the TinyFATFS README for its other drivers.
 
+## Using a remote export as LittleFS
+
+`NBDLittleFS` (include `NBD_LittleFS.h` instead of `NBD.h`) mounts an export as a LittleFS filesystem. It requires the 107-Arduino-littlefs library (Arduino library manager), which provides the littlefs C API. After `begin()` the files are accessed with the `lfs_*` functions using `lfs()`.
+
+```cpp
+#include <WiFi.h>
+#include "NBD_LittleFS.h"
+
+WiFiClient wifi;
+NBDClient nbd_client(wifi);
+NBDLittleFS lfs_fs(nbd_client);  // block size 4096
+
+void setup() {
+  // ... connect WiFi
+  nbd_client.connect("192.168.1.10", NBD_DEFAULT_PORT, "ram");
+  lfs_fs.begin(true);  // true: format the export if it can't be mounted
+  lfs_file_t file;
+  lfs_file_open(lfs_fs.lfs(), &file, "test.txt", LFS_O_WRONLY | LFS_O_CREAT);
+  lfs_file_write(lfs_fs.lfs(), &file, "hello", 5);
+  lfs_file_close(lfs_fs.lfs(), &file);
+}
+
+void loop() {}
+```
+
+The block size must match an existing filesystem. The library uses littlefs v2.5 (on-disk version 2.0), so it can't mount filesystems created with on-disk version 2.1, e.g. by the LittleFS of the ESP32 core. See `examples/nbd-client-littlefs/nbd-client-littlefs.ino` for a full example.
+
 ## Related documents
 
 - [NBD Server](server.md): exporting storage from an Arduino.

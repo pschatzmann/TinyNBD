@@ -10,7 +10,7 @@
 
 const char* ssid = "your-ssid";
 const char* password = "your-password";
-const int csPin = SS;
+const uint8_t sdChipSelectPin = 13;
 
 WiFiServer wifiServer(NBD_DEFAULT_PORT);
 NBDServer<WiFiServer> nbd_server(wifiServer);
@@ -20,7 +20,10 @@ void setup() {
   Serial.begin(115200);
   NBDLogger::begin(Serial, NBDLogLevel::Info);
 
-  if (!SD.begin(csPin, SPI, 20000000)) {
+  // Adapt the SPI pins to your board if the default pins are not usable (e.g. because
+  SPI.begin(14, 2, 15, sdChipSelectPin);  // SCK, MISO, MOSI, CS
+
+  if (!SD.begin(sdChipSelectPin, SPI, 20000000)) {
     Serial.println("SD card initialization failed");
     while (true) delay(1000);
   }
@@ -32,6 +35,7 @@ void setup() {
   Serial.println(WiFi.localIP());
 
   nbd_server.addExport("sd", sdDisk, false, "SD card (SPI)");
+  nbd_server.setBufferSize(16384); 
   if (!nbd_server.begin()) Serial.println("Could not start nbd server");
 }
 

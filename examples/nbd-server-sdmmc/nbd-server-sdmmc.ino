@@ -32,6 +32,7 @@ void setup() {
   Serial.println(WiFi.localIP());
 
   nbd_server.addExport("sd", sdDisk, false, "SD card (SDMMC)");
+  nbd_server.setBufferSize(16384); 
   if (!nbd_server.begin()) Serial.println("Could not start nbd server");
 }
 

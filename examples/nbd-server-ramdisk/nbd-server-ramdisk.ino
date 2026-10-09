@@ -8,6 +8,7 @@
 
 const char* ssid = "your-ssid";
 const char* password = "your-password";
+const uint8_t sdChipSelectPin = 13;
 
 WiFiServer wifiServer(NBD_DEFAULT_PORT); // 10809
 NBDServer<WiFiServer> nbd_server(wifiServer);

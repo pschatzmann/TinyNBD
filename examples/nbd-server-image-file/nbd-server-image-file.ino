@@ -12,6 +12,7 @@ const char* ssid = "your-ssid";
 const char* password = "your-password";
 const char* imagePath = "/disk.img";
 const size_t imageSize = 8 * 1024 * 1024;
+const uint8_t sdChipSelectPin = 13;
 
 WiFiServer wifiServer(NBD_DEFAULT_PORT); // 10809
 NBDServer<WiFiServer> nbd_server(wifiServer);
@@ -33,7 +34,10 @@ void setup() {
   Serial.begin(115200);
   NBDLogger::begin(Serial, NBDLogLevel::Info);
 
-  if (!SD.begin()) {
+  // Adapt the SPI pins to your board if the default pins are not usable (e.g. because
+  SPI.begin(14, 2, 15, sdChipSelectPin);  // SCK, MISO, MOSI, CS
+
+  if (!SD.begin(sdChipSelectPin)) {
     Serial.println("SD card initialization failed");
     while (true) delay(1000);
   }

@@ -10,6 +10,8 @@ This library implements a header-only [NBD (Network Block Device)](https://githu
 
 With it, a Linux machine (or qemu, nbdkit, …) can use storage attached to the microcontroller as a local block device, and an Arduino can read and write an nbd export on another machine.
 
+This makes nbd an easy and efficient way to share static file content over the network: export the storage read-only, and several clients can mount it at the same time. The microcontroller only serves blocks, while each client does the file system work and caches what it has read. Only one client at a time may mount an export with write access, because clients don't know about each other's changes.
+
 - [NBD Server](docs/server.md): exporting storage from an Arduino, block devices, example and Linux/qemu client usage.
 - [NBD Client](docs/client.md): reading and writing an nbd export from an Arduino.
 
@@ -38,7 +40,7 @@ lib_deps = https://github.com/pschatzmann/arduino-nbd.git
 
 ## Usage
 
-Server and client examples are in [examples/](examples/). See the documents below for details. [examples/nbd-client-tinyfatfs](examples/nbd-client-tinyfatfs/nbd-client-tinyfatfs.ino) mounts a remote export as a FAT filesystem using the [TinyFATFS](https://github.com/pschatzmann/TinyFATFS) library's `NBDClientIO` driver.
+Server and client examples are in [examples/](examples/). See the documents below for details. [examples/nbd-client-tinyfatfs](examples/nbd-client-tinyfatfs/nbd-client-tinyfatfs.ino) mounts a remote export as a FAT filesystem using the [TinyFATFS](https://github.com/pschatzmann/TinyFATFS) library's `NBDClientIO` driver, and [examples/nbd-client-littlefs](examples/nbd-client-littlefs/nbd-client-littlefs.ino) mounts one as a LittleFS filesystem with `NBDLittleFS` (`NBD_LittleFS.h`, requires the 107-Arduino-littlefs library).
 
 ## Documentation
 
