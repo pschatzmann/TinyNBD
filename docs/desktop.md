@@ -9,7 +9,7 @@ The library also runs on Linux, macOS and Windows on top of the [Arduino Emulato
 ## Requirements
 
 - CMake 3.16 or newer and a C++17 compiler
-- git: CMake downloads the Arduino Emulator automatically
+- git: CMake downloads the Arduino Emulator automatically, and the TinyFATFS sources for the `fatio-block-device` test (see below)
 - Optional, for the tests: `qemu-img` and `qemu-io` (Debian/Ubuntu package `qemu-utils`)
 
 ## Building
@@ -69,7 +69,16 @@ The test script [tests/qemu-test.sh](../tests/qemu-test.sh) starts the test serv
 - unaligned writes on a sector device (read-modify-write),
 - trim and write zeroes,
 - read-only exports,
-- unknown and default export names.
+- unknown and default export names,
+- the `cached` export (`CachedBlockDevice`).
+
+The `fatio-block-device` test (`tests/fatio-test/`) checks `FatIOBlockDevice` against TinyFATFS's `RamIO` driver. It needs the TinyFATFS sources from <https://github.com/pschatzmann/TinyFATFS>. CMake looks for them in this order:
+
+1. `-DNBD_TINYFATFS_DIR=/path/to/TinyFATFS`
+2. a sibling `../TinyFATFS` checkout
+3. a download from GitHub (`FetchContent`)
+
+If none of these work, the test is skipped with a CMake message.
 
 If qemu isn't installed, the test isn't registered and CMake prints a message.
 

@@ -22,6 +22,8 @@ nbd (Network Block Device) is a simple TCP protocol that makes a remote disk loo
 | `SDRawBlockDevice<SDT>` | `NBD.h` | Whole SD card via `readRAW()`/`writeRAW()` |
 | `SDBlockDevice` | `NBD_SD.h` | Whole SD card using the **SD** (SPI) library |
 | `SDMMCBlockDevice` | `NBD_SDMMC.h` | Whole SD card using the **SD_MMC** library |
+| `CachedBlockDevice` | `NBD.h` | Optional write-through LRU page cache around any device, allocated in PSRAM when available. See [Configuration](configuration.md#page-cache) |
+| `FatIOBlockDevice` | `nbd-server/FatIOBlockDevice.h` | Exports any [TinyFATFS](https://github.com/pschatzmann/TinyFATFS) `IO` driver (RAM, SD, SDMMC, SPI, file). Not included by `NBD.h`; needs the TinyFATFS `src` folder on the include path |
 
 To add your own device, subclass `BlockDevice` (byte-addressed) or `SectorBlockDevice` (sector-addressed; unaligned access is handled with read-modify-write).
 

@@ -28,6 +28,8 @@ I recommend git, because you can update to the latest version with `git pull` in
 
 The library is header-only and has no dependencies besides the Arduino core. It was tested with the ESP32 Arduino core 3.3. The SD card support uses the core's `SD` and `SD_MMC` libraries.
 
+The optional `FatIOBlockDevice` (`src/nbd-server/FatIOBlockDevice.h`) depends on the [TinyFATFS](https://github.com/pschatzmann/TinyFATFS) library. Install it next to this library and put its `src` folder on the include path. It is not included by `NBD.h`.
+
 ### PlatformIO
 
 ```ini
@@ -40,8 +42,8 @@ Server and client examples are in [examples/](examples/). See the documents belo
 
 ## Documentation
 
-- [nbd Server](docs/server.md): exporting storage, block devices, server example and Linux/qemu clients.
-- [nbd Client](docs/client.md): API and example for reading and writing an export from an Arduino.
+- [NBD Server](docs/server.md): exporting storage, block devices, server example and Linux/qemu clients.
+- [NBD Client](docs/client.md): API and example for reading and writing an export from an Arduino.
 - [Configuration](docs/configuration.md): compile-time limits, buffer size, timeout and namespace options.
 - [Usage Notes](docs/notes.md): SD card access, flash wear, performance and security. Read this before using the library.
 - [Accessing an Export from Several Machines](docs/multiple-clients.md): what is safe when several clients share an export, and how to set this up.
