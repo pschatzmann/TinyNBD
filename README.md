@@ -40,7 +40,7 @@ lib_deps = https://github.com/pschatzmann/arduino-nbd.git
 
 ## Usage
 
-Server and client examples are in [examples/](examples/). See the documents below for details. [examples/nbd-client-tinyfatfs](examples/nbd-client-tinyfatfs/nbd-client-tinyfatfs.ino) mounts a remote export as a FAT filesystem using the [TinyFATFS](https://github.com/pschatzmann/TinyFATFS) library's `NBDClientIO` driver, and [examples/nbd-client-littlefs](examples/nbd-client-littlefs/nbd-client-littlefs.ino) mounts one as a LittleFS filesystem with `NBDLittleFS` (`NBD_LittleFS.h`, requires the 107-Arduino-littlefs library).
+Server and client examples are in [examples/](examples/). See the documents below for details. [examples/nbd-client-tinyfatfs](examples/nbd-client-tinyfatfs/nbd-client-tinyfatfs.ino) mounts a remote export as a FAT filesystem using the [TinyFATFS](https://github.com/pschatzmann/TinyFATFS) library's `NBDClientIO` driver, and [examples/nbd-client-littlefs](examples/nbd-client-littlefs/nbd-client-littlefs.ino) mounts one as a LittleFS filesystem with `NBDLittleFS` (`NBD_LittleFS.h`, requires the 107-Arduino-littlefs library). The [TinyEXT4](https://github.com/pschatzmann/TinyEXT4) library provides an `NBDClientIO` driver as well, which mounts a remote export as an ext4 filesystem (see its [nbd-client](https://github.com/pschatzmann/TinyEXT4/tree/main/examples/nbd-client) example).
 
 ## Documentation
 
