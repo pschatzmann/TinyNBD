@@ -76,10 +76,10 @@ $(function() {
 <p><b>NBD</b> is a simple TCP protocol that makes a remote disk look like a local one. The server exports raw storage as a list of fixed-size blocks, and the client reads and writes these blocks by offset. Unlike a network file system such as SMB or NFS, the server knows nothing about files: the client sees a plain disk (e.g. <code>/dev/nbd0</code> on Linux) and can partition it, format it and mount it with any file system. nbd is built into the Linux kernel and is supported by qemu and nbdkit.</p>
 <p>This library implements a header-only <a href="https://github.com/NetworkBlockDevice/nbd/blob/master/doc/proto.md">NBD (Network Block Device)</a> server for Arduino. It uses only the Arduino networking API (<code>Server</code>/<code>Client</code>), so it works with <code>WiFiServer</code>, <code>NetworkServer</code>, <code>EthernetServer</code> and other servers that provide <code>accept()</code>. The main target is the ESP32.</p>
 <p>With it, a Linux machine (or qemu, nbdkit, …) can use storage attached to the microcontroller as a local block device, and an Arduino can read and write an nbd export on another machine.</p>
-<p>This makes nbd an easy and efficient way to share static file content over the network: export the storage read-only, and several clients can mount it at the same time. The microcontroller only serves blocks, while each client does the file system work and caches what it has read. Only one client at a time may mount an export with write access, because clients don't know about each other's changes. <a class="el" href="md_docs_2littlefs.html">LittleFS</a> describes a ready-made setup that shares files uploaded with the sketch.</p>
+<p>This makes nbd an easy and efficient way to share static file content over the network: export the storage read-only, and several clients can mount it at the same time. The microcontroller only serves blocks, while each client does the file system work and caches what it has read. Only one client at a time may mount an export with write access, because clients don't know about each other's changes. <a href="https://github.com/pschatzmann/TinyNBD/wiki/LittleFS">LittleFS</a> describes a ready-made setup that shares files uploaded with the sketch.</p>
 <ul>
-<li><a class="el" href="md_docs_2server.html">NBD Server</a>: exporting storage from an Arduino, block devices, example and Linux/qemu client usage.</li>
-<li><a class="el" href="md_docs_2client.html">NBD Client</a>: reading and writing an nbd export from an Arduino.</li>
+<li><a href="https://github.com/pschatzmann/TinyNBD/wiki/NBD-Server">NBD Server</a>: exporting storage from an Arduino, block devices, example and Linux/qemu client usage.</li>
+<li><a href="https://github.com/pschatzmann/TinyNBD/wiki/NBD-Client">NBD Client</a>: reading and writing an nbd export from an Arduino.</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Installation</h1>
@@ -99,15 +99,16 @@ Usage</h1>
 <p>Server and client examples are in <a href="examples/">examples/</a>. See the documents below for details. <a href="examples/nbd-client-tinyfatfs/nbd-client-tinyfatfs.ino">examples/nbd-client-tinyfatfs</a> mounts a remote export as a FAT filesystem using the <a href="https://github.com/pschatzmann/TinyFATFS">TinyFATFS</a> library's <code>NBDClientIO</code> driver, and <a href="examples/nbd-client-littlefs/nbd-client-littlefs.ino">examples/nbd-client-littlefs</a> mounts one as a LittleFS filesystem with <code>NBDLittleFS</code> (<code><a class="el" href="_n_b_d___little_f_s_8h.html" title="Mounts a remote nbd export as LittleFS: include this instead of NBD.h. Requires the 107-Arduino-littl...">NBD_LittleFS.h</a></code>, requires the 107-Arduino-littlefs library). The <a href="https://github.com/pschatzmann/TinyEXT4">TinyEXT4</a> library provides an <code>NBDClientIO</code> driver as well, which mounts a remote export as an ext4 filesystem (see its <a href="https://github.com/pschatzmann/TinyEXT4/tree/main/examples/nbd-client">nbd-client</a> example).</p>
 <h1><a class="anchor" id="autotoc_md5"></a>
 Documentation</h1>
+<p>The documentation is in the <a href="https://github.com/pschatzmann/TinyNBD/wiki">Wiki</a>. The API of all classes is described in the <a href="https://pschatzmann.github.io/TinyNBD/">Doxygen class documentation</a>.</p>
 <ul>
-<li><a class="el" href="md_docs_2server.html">NBD Server</a>: exporting storage, block devices, server example and Linux/qemu clients.</li>
-<li><a class="el" href="md_docs_2client.html">NBD Client</a>: API and example for reading and writing an export from an Arduino.</li>
-<li><a class="el" href="md_docs_2configuration.html">Configuration</a>: compile-time limits, buffer size, timeout and namespace options.</li>
-<li><a class="el" href="md_docs_2tinyfatfs.html">TinyFATFS</a>: how the TinyFATFS library relates to this one: <code>NBDClientIO</code> (NBD as a FAT drive) and <code>FatIOBlockDevice</code> (a FAT drive as an NBD export).</li>
-<li><a class="el" href="md_docs_2littlefs.html">LittleFS</a>: sharing static files from a LittleFS flash partition that is uploaded with the sketch (recommended, read-only), and mounting an export with <code>NBDLittleFS</code> or littlefs-fuse.</li>
-<li><a class="el" href="md_docs_2notes.html">Usage Notes</a>: SD card access, flash wear, performance and security. Read this before using the library.</li>
-<li><a class="el" href="md_docs_2multiple-clients.html">Accessing an Export from Several Machines</a>: what is safe when several clients share an export, and how to set this up.</li>
-<li><a class="el" href="md_docs_2desktop.html">Running on the Desktop</a>: running the library on Linux, macOS and Windows with the Arduino Emulator; CMake build, desktop examples, tests and <code>DesktopFileBlockDevice</code>. </li>
+<li><a href="https://github.com/pschatzmann/TinyNBD/wiki/NBD-Server">NBD Server</a>: exporting storage, block devices, server example and Linux/qemu clients.</li>
+<li><a href="https://github.com/pschatzmann/TinyNBD/wiki/NBD-Client">NBD Client</a>: API and example for reading and writing an export from an Arduino.</li>
+<li><a href="https://github.com/pschatzmann/TinyNBD/wiki/Configuration">Configuration</a>: compile-time limits, buffer size, timeout and namespace options.</li>
+<li><a href="https://github.com/pschatzmann/TinyNBD/wiki/TinyFATFS">TinyFATFS</a>: how the TinyFATFS library relates to this one: <code>NBDClientIO</code> (NBD as a FAT drive) and <code>FatIOBlockDevice</code> (a FAT drive as an NBD export).</li>
+<li><a href="https://github.com/pschatzmann/TinyNBD/wiki/LittleFS">LittleFS</a>: sharing static files from a LittleFS flash partition that is uploaded with the sketch (recommended, read-only), and mounting an export with <code>NBDLittleFS</code> or littlefs-fuse.</li>
+<li><a href="https://github.com/pschatzmann/TinyNBD/wiki/Usage-Notes">Usage Notes</a>: SD card access, flash wear, performance and security. Read this before using the library.</li>
+<li><a href="https://github.com/pschatzmann/TinyNBD/wiki/Multiple-Clients">Accessing an Export from Several Machines</a>: what is safe when several clients share an export, and how to set this up.</li>
+<li><a href="https://github.com/pschatzmann/TinyNBD/wiki/Desktop">Running on the Desktop</a>: running the library on Linux, macOS and Windows with the Arduino Emulator; CMake build, desktop examples, tests and <code>DesktopFileBlockDevice</code>. </li>
 </ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
