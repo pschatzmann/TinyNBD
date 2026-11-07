@@ -1,0 +1,19 @@
+<map id="FatIOBlockDevice" name="FatIOBlockDevice">
+<area shape="rect" id="Node000001" title="Exports a TinyFATFS IO driver as a sector based BlockDevice." alt="" coords="278,191,414,218"/>
+<area shape="rect" id="Node000002" href="$classnbd_1_1_sector_block_device.html" title="Base class for devices which can only access whole sectors (SD cards, flash). Unaligned byte access i..." alt="" coords="41,98,184,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,129,249,164,313,190,308,190,248,169,159,135"/>
+<area shape="rect" id="Node000003" href="$classnbd_1_1_block_device.html" title="Abstract byte addressable block device which is exported by the nbd server. All offsets and lengths a..." alt="" coords="5,5,108,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="73,44,107,97,102,98,72,49"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="131,5,208,33"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="155,44,123,99,119,96,152,48"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="208,98,257,126"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="247,137,271,165,311,190,306,190,267,169,245,142"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="282,98,335,126"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="315,139,325,166,338,191,334,189,320,168,312,143"/>
+<area shape="rect" id="Node000007" href="$classbool.html" title=" " alt="" coords="360,98,409,126"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="375,138,353,192,350,188,371,141"/>
+<area shape="rect" id="Node000008" href="$classuint32__t.html" title=" " alt="" coords="433,98,507,126"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="451,136,417,169,376,193,374,188,414,165,446,138"/>
+<area shape="rect" id="Node000009" href="$classuint64__t.html" title=" " alt="" coords="531,98,606,126"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="533,133,459,169,391,193,390,188,457,164,528,134"/>
+</map>

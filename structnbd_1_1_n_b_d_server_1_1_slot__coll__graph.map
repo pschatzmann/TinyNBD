@@ -1,0 +1,25 @@
+<map id="NBDServer&lt; ServerT, ClientT &gt;::Slot" name="NBDServer&lt; ServerT, ClientT &gt;::Slot">
+<area shape="rect" id="Node000001" title=" " alt="" coords="462,317,624,362"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="401,225,469,252"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="461,261,522,317,517,316,459,265"/>
+<area shape="rect" id="Node000003" href="$classnbd_1_1_n_b_d_session.html" title="Implements the nbd protocol (fixed newstyle handshake and transmission phase with simple replies) for..." alt="" coords="493,225,593,252"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="545,266,545,318,541,315,541,270"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="440,115,499,143"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="442,152,434,168,429,184,434,199,456,213,495,227,490,227,454,218,430,202,423,184,429,166,438,156"/>
+<area shape="rect" id="Node000005" href="$structnbd_1_1_n_b_d_export.html" title="An exported block device." alt="" coords="170,115,262,143"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="232,153,253,178,278,198,306,211,330,218,375,221,422,218,481,222,495,227,490,227,480,227,422,224,375,226,330,223,304,216,276,203,249,182,231,158"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,5,105,33"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="64,45,79,69,97,89,132,109,172,121,167,123,130,114,93,93,75,72,65,50"/>
+<area shape="rect" id="Node000007" href="$classnbd_1_1_block_device.html" title="Abstract byte addressable block device which is exported by the nbd server. All offsets and lengths a..." alt="" coords="129,5,232,33"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="177,46,179,70,184,90,202,114,196,115,179,92,174,70,175,51"/>
+<area shape="rect" id="Node000008" href="$classbool.html" title=" " alt="" coords="321,5,370,33"/>
+<area shape="poly" id="edge12_Node000001_Node000008" title=" " alt="" coords="385,21,484,31,607,49,723,76,769,93,801,113,819,133,828,155,828,178,817,202,800,226,779,247,730,282,676,307,625,324,624,319,674,302,727,277,775,243,796,223,813,199,822,176,823,156,814,136,797,117,767,98,722,81,606,54,483,37,386,26"/>
+<area shape="poly" id="edge11_Node000003_Node000008" title=" " alt="" coords="344,46,347,94,352,118,361,142,373,162,385,175,422,198,457,214,495,228,490,228,455,219,419,203,382,179,368,165,356,144,347,120,342,95,342,51"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="304,33,283,44,261,59,238,87,224,116,219,113,233,84,257,55,280,40,308,30"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="524,115,562,143"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="545,156,545,226,541,223,541,160"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="611,115,688,143"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="651,156,647,181,636,202,617,218,594,229,593,224,614,214,632,199,642,179,647,160"/>
+<area shape="rect" id="Node000011" href="$classuint32__t.html" title=" " alt="" coords="712,115,787,143"/>
+<area shape="poly" id="edge10_Node000003_Node000011" title=" " alt="" coords="738,155,720,182,697,203,672,216,645,225,594,236,593,231,644,220,670,211,693,198,716,178,733,158"/>
+</map>

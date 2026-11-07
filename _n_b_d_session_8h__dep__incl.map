@@ -1,0 +1,14 @@
+<map id="src/nbd&#45;server/NBDSession.h" name="src/nbd&#45;server/NBDSession.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="120,5,330,33"/>
+<area shape="rect" id="Node000002" href="$_n_b_d_8h.html" title="Header&#45;only nbd (Network Block Device) server for Arduino." alt="" coords="182,157,268,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,43,193,63,185,82,182,95,185,108,198,134,215,156,209,156,193,136,180,110,177,95,180,80,188,61,200,47"/>
+<area shape="rect" id="Node000006" href="$_n_b_d_server_8h.html" title=" " alt="" coords="194,81,394,109"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="248,42,285,80,279,81,247,47"/>
+<area shape="rect" id="Node000003" href="$_n_b_d___little_f_s_8h.html" title="Mounts a remote nbd export as LittleFS: include this instead of NBD.h. Requires the 107&#45;Arduino&#45;littl..." alt="" coords="5,232,146,260"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="187,192,103,234,101,229,182,191"/>
+<area shape="rect" id="Node000004" href="$_n_b_d___s_d_8h.html" title="Support for the SD library (SPI): include this instead of NBD.h to export a whole SD card with SDBloc..." alt="" coords="170,232,280,260"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="227,198,227,233,223,230,223,202"/>
+<area shape="rect" id="Node000005" href="$_n_b_d___s_d_m_m_c_8h.html" title="Support for the SD_MMC library (SDMMC host): include this instead of NBD.h to export a whole SD card ..." alt="" coords="304,232,447,260"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="266,189,351,232,346,232,265,194"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="273,119,239,158,235,154,269,122"/>
+</map>

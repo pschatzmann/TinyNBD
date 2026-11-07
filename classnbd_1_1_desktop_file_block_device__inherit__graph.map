@@ -1,0 +1,5 @@
+<map id="DesktopFileBlockDevice" name="DesktopFileBlockDevice">
+<area shape="rect" id="Node000001" title="Desktop only: exports a disk image file using the C++ standard library. If a size is given,..." alt="" coords="5,81,185,109"/>
+<area shape="rect" id="Node000002" href="$classnbd_1_1_block_device.html" title="Abstract byte addressable block device which is exported by the nbd server. All offsets and lengths a..." alt="" coords="44,5,146,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,47,97,82,93,80,93,51"/>
+</map>

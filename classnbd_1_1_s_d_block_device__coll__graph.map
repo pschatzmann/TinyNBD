@@ -1,0 +1,19 @@
+<map id="SDBlockDevice" name="SDBlockDevice">
+<area shape="rect" id="Node000001" title="Raw sector access to an SD card driven by the SD (SPI) library." alt="" coords="258,285,378,312"/>
+<area shape="rect" id="Node000002" href="$classnbd_1_1_s_d_raw_block_device.html" title=" " alt="" coords="230,191,406,235"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="320,249,320,286,316,283,316,253"/>
+<area shape="rect" id="Node000003" href="$classnbd_1_1_sector_block_device.html" title="Base class for devices which can only access whole sectors (SD cards, flash). Unaligned byte access i..." alt="" coords="41,98,184,126"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="154,130,275,189,270,191,153,136"/>
+<area shape="rect" id="Node000004" href="$classnbd_1_1_block_device.html" title="Abstract byte addressable block device which is exported by the nbd server. All offsets and lengths a..." alt="" coords="5,5,108,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="73,44,107,97,102,98,72,49"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="131,5,208,33"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="152,49,123,99,118,96,155,44"/>
+<area shape="rect" id="Node000006" href="$classfs_1_1_s_d_f_s_01_6.html" title=" " alt="" coords="208,98,276,126"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="262,135,304,190,299,190,260,140"/>
+<area shape="rect" id="Node000007" href="$classbool.html" title=" " alt="" coords="300,98,349,126"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="322,139,322,150,320,192,315,189,317,149,318,144"/>
+<area shape="rect" id="Node000008" href="$classuint32__t.html" title=" " alt="" coords="379,98,454,126"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="407,138,389,168,360,193,357,188,385,165,403,141"/>
+<area shape="rect" id="Node000009" href="$classuint64__t.html" title=" " alt="" coords="487,98,562,126"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="511,137,499,156,483,169,446,188,407,201,405,196,444,183,480,164,495,152,507,140"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="MemoryBlockDevice" name="MemoryBlockDevice">
+<area shape="rect" id="Node000001" title="RAM disk. Either uses a buffer provided by the caller or allocates the memory in begin() (on the ESP3..." alt="" coords="5,81,162,109"/>
+<area shape="rect" id="Node000002" href="$classnbd_1_1_block_device.html" title="Abstract byte addressable block device which is exported by the nbd server. All offsets and lengths a..." alt="" coords="32,5,135,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,47,86,81,81,80,82,51"/>
+</map>

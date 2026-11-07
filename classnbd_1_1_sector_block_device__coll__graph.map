@@ -1,0 +1,7 @@
+<map id="SectorBlockDevice" name="SectorBlockDevice">
+<area shape="rect" id="Node000001" title="Base class for devices which can only access whole sectors (SD cards, flash). Unaligned byte access i..." alt="" coords="41,98,184,126"/>
+<area shape="rect" id="Node000002" href="$classnbd_1_1_block_device.html" title="Abstract byte addressable block device which is exported by the nbd server. All offsets and lengths a..." alt="" coords="5,5,108,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,44,107,97,102,98,71,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="131,5,208,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,45,123,99,119,96,151,47"/>
+</map>

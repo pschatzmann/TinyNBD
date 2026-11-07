@@ -1,0 +1,29 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classnbd_1_1_block_device.html" title="Abstract byte addressable block device which is exported by the nbd server. All offsets and lengths a..." alt="" coords="5,109,108,137"/>
+<area shape="rect" id="Node000001" href="$classnbd_1_1_cached_block_device.html" title="Decorator which caches pages of a wrapped BlockDevice." alt="" coords="174,5,324,33"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="81,97,115,69,154,43,187,32,184,36,157,48,118,73,85,100"/>
+<area shape="rect" id="Node000002" href="$classnbd_1_1_desktop_file_block_device.html" title="Desktop only: exports a disk image file using the C++ standard library. If a size is given,..." alt="" coords="159,57,338,85"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="121,103,196,84,193,88,124,108"/>
+<area shape="rect" id="Node000003" href="$classnbd_1_1_file_block_device.html" title="Exports a disk image file. Works with any Arduino File like class (fs::File for SD,..." alt="" coords="156,109,342,137"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="122,121,157,122,153,125,125,126"/>
+<area shape="rect" id="Node000004" href="$classnbd_1_1_memory_block_device.html" title="RAM disk. Either uses a buffer provided by the caller or allocates the memory in begin() (on the ESP3..." alt="" coords="171,161,327,189"/>
+<area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="122,138,197,159,192,162,123,143"/>
+<area shape="rect" id="Node000005" href="$classnbd_1_1_sector_block_device.html" title="Base class for devices which can only access whole sectors (SD cards, flash). Unaligned byte access i..." alt="" coords="177,213,320,241"/>
+<area shape="poly" id="edge5_Node000000_Node000005" title=" " alt="" coords="83,145,118,173,157,198,188,212,183,214,154,203,115,177,83,150"/>
+<area shape="rect" id="Node000006" href="$classnbd_1_1_s_d_raw_block_device.html" title=" " alt="" coords="408,49,583,94"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="333,204,340,199,357,176,364,153,370,128,388,104,405,96,409,93,392,108,375,131,369,154,362,179,344,202,335,209"/>
+<area shape="rect" id="Node000008" href="$classnbd_1_1_s_d_raw_block_device.html" title=" " alt="" coords="408,118,583,163"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="320,206,341,198,389,173,423,162,418,165,391,178,343,203,322,211"/>
+<area shape="rect" id="Node000010" href="$classnbd_1_1_e_s_p32_partition_block_device.html" title="Exports an ESP32 flash data partition (e.g. &quot;spiffs&quot; or &quot;ffat&quot;). Writes are done with erase + write o..." alt="" coords="397,187,593,214"/>
+<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="335,215,399,210,394,212,336,220"/>
+<area shape="rect" id="Node000011" href="$classnbd_1_1_fat_i_o_block_device.html" title="Exports a TinyFATFS IO driver as a sector based BlockDevice." alt="" coords="428,239,563,266"/>
+<area shape="poly" id="edge11_Node000005_Node000011" title=" " alt="" coords="335,233,429,245,424,246,336,239"/>
+<area shape="rect" id="Node000012" href="$classnbd_1_1_n_b_d_client_sector_block_device.html" title="Exposes an nbd export opened with NBDClient as a SectorBlockDevice." alt="" coords="390,291,600,318"/>
+<area shape="poly" id="edge12_Node000005_Node000012" title=" " alt="" coords="301,244,391,275,436,290,431,290,389,280,301,250"/>
+<area shape="rect" id="Node000013" href="$classnbd_1_1_s_d_raw_block_device.html" title="Exports a whole SD card on sector level (the client sees the partition table and file systems)...." alt="" coords="393,343,597,370"/>
+<area shape="poly" id="edge13_Node000005_Node000013" title=" " alt="" coords="277,249,329,290,391,327,425,342,420,342,389,332,326,294,276,254"/>
+<area shape="rect" id="Node000007" href="$classnbd_1_1_s_d_block_device.html" title="Raw sector access to an SD card driven by the SD (SPI) library." alt="" coords="665,57,785,85"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="597,69,667,70,662,72,598,74"/>
+<area shape="rect" id="Node000009" href="$classnbd_1_1_s_d_m_m_c_block_device.html" title="Raw sector access to an SD card driven by the SD_MMC library. Consecutive sectors are transferred wit..." alt="" coords="648,127,802,154"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="598,138,650,140,645,141,599,143"/>
+</map>

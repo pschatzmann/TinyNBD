@@ -1,0 +1,11 @@
+<map id="src/nbd&#45;server/FileBlockDevice.h" name="src/nbd&#45;server/FileBlockDevice.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="45,5,222,50"/>
+<area shape="rect" id="Node000002" href="$_block_device_8h.html" title=" " alt="" coords="77,98,191,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="135,48,136,83,131,82,133,53"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,174,76,201"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="120,125,70,166,67,162,115,127"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="99,174,168,201"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="136,124,136,159,131,157,132,128"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="192,174,262,201"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="151,124,202,164,196,164,150,129"/>
+</map>

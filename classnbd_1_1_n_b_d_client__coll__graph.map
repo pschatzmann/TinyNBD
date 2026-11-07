@@ -1,0 +1,13 @@
+<map id="NBDClient" name="NBDClient">
+<area shape="rect" id="Node000001" title="Implements the nbd client side of the protocol (fixed newstyle handshake with NBD_OPT_EXPORT_NAME,..." alt="" coords="228,183,317,211"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,79,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="45,46,59,104,73,133,93,157,116,168,150,177,231,191,226,192,149,183,114,173,90,161,69,136,54,106,43,51"/>
+<area shape="rect" id="Node000003" href="$classuint32__t.html" title=" " alt="" coords="102,5,176,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="138,46,143,103,152,132,167,157,180,169,195,178,231,191,225,191,193,182,177,173,163,161,147,134,138,104,135,51"/>
+<area shape="rect" id="Node000004" href="$classbool.html" title=" " alt="" coords="248,5,297,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="275,47,275,184,270,182,270,50"/>
+<area shape="rect" id="Node000005" href="$classuint64__t.html" title=" " alt="" coords="333,5,407,33"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="373,47,367,103,358,133,343,161,329,175,311,185,310,180,325,170,339,157,353,131,362,102,369,50"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="464,5,538,33"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="505,47,505,75,501,105,491,135,473,161,446,175,406,185,317,196,317,190,405,180,445,170,470,157,486,133,496,104,500,75,501,51"/>
+</map>

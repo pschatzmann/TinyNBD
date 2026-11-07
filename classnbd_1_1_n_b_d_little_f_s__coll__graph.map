@@ -1,0 +1,22 @@
+<map id="NBDLittleFS" name="NBDLittleFS">
+<area shape="rect" id="Node000001" title="LittleFS on a remote nbd export opened with NBDClient. After begin() the files are accessed with the ..." alt="" coords="724,276,822,303"/>
+<area shape="rect" id="Node000002" href="$classnbd_1_1_n_b_d_client.html" title="Implements the nbd client side of the protocol (fixed newstyle handshake with NBD_OPT_EXPORT_NAME,..." alt="" coords="281,183,369,211"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="385,209,576,249,726,279,721,279,575,254,385,214"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="132,5,206,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="169,46,178,104,189,132,206,157,222,170,241,180,283,192,278,193,239,185,219,175,202,161,184,135,173,105,167,51"/>
+<area shape="rect" id="Node000004" href="$classuint32__t.html" title=" " alt="" coords="5,5,80,33"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="38,46,38,75,40,104,48,133,64,157,78,167,100,175,158,185,222,191,283,195,278,196,222,196,157,191,98,180,76,171,60,161,43,135,35,105,33,75,37,51"/>
+<area shape="rect" id="Node000005" href="$classbool.html" title=" " alt="" coords="566,5,615,33"/>
+<area shape="poly" id="edge10_Node000001_Node000005" title=" " alt="" coords="611,44,618,56,626,79,629,100,629,136,631,171,637,189,649,209,667,230,690,248,739,276,734,275,687,252,664,234,644,212,632,191,626,172,624,137,624,100,621,80,613,58,609,49"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="563,42,552,58,542,86,541,111,537,136,531,149,520,161,494,174,455,184,370,195,369,190,454,179,492,169,517,157,527,146,532,135,535,111,537,85,548,56,559,45"/>
+<area shape="rect" id="Node000006" href="$classuint64__t.html" title=" " alt="" coords="229,5,304,33"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="259,46,251,102,254,131,263,158,275,171,290,183,285,182,271,175,259,160,248,132,246,102,256,50"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="353,5,428,33"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="391,46,384,102,376,132,363,160,343,185,340,180,359,158,371,130,379,101,388,51"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="739,183,821,211"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="777,225,777,235,775,277,771,274,772,234,773,228"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="851,183,900,211"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="868,223,848,254,831,267,811,278,810,272,828,263,845,250,863,226"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="924,183,1049,211"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="952,218,882,254,817,278,816,272,880,249,947,219"/>
+</map>

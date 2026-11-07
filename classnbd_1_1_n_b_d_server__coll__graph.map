@@ -1,0 +1,34 @@
+<map id="NBDServer&lt; ServerT, ClientT &gt;" name="NBDServer&lt; ServerT, ClientT &gt;">
+<area shape="rect" id="Node000001" title="nbd server for any Arduino Server which provides accept() (e.g. WiFiServer, NetworkServer,..." alt="" coords="439,410,601,455"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,317,91,345"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="51,358,58,373,66,384,84,392,118,399,216,411,441,426,437,430,216,416,117,404,83,397,63,388,53,376,50,363"/>
+<area shape="rect" id="Node000003" href="$structnbd_1_1_n_b_d_export.html" title="An exported block device." alt="" coords="176,115,269,143"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="214,155,208,188,204,223,207,259,220,292,240,318,264,340,321,376,382,401,441,419,436,419,380,406,318,381,261,345,236,322,215,295,202,260,199,223,203,187,212,160"/>
+<area shape="rect" id="Node000010" href="$classnbd_1_1_n_b_d_session.html" title="Implements the nbd protocol (fixed newstyle handshake and transmission phase with simple replies) for..." alt="" coords="470,225,570,252"/>
+<area shape="poly" id="edge11_Node000010_Node000003" title=" " alt="" coords="226,155,236,180,250,199,266,207,288,215,346,225,472,235,467,237,345,230,287,220,264,212,247,203,231,182,225,160"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="54,5,154,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="114,45,129,69,146,89,164,102,185,113,180,115,161,107,142,93,125,72,115,50"/>
+<area shape="rect" id="Node000005" href="$classnbd_1_1_block_device.html" title="Abstract byte addressable block device which is exported by the nbd server. All offsets and lengths a..." alt="" coords="178,5,280,33"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="229,46,226,116,221,114,227,51"/>
+<area shape="rect" id="Node000006" href="$classbool.html" title=" " alt="" coords="483,5,533,33"/>
+<area shape="poly" id="edge19_Node000001_Node000006" title=" " alt="" coords="547,18,664,24,808,39,875,53,931,71,953,83,969,96,980,111,984,127,984,333,981,347,972,360,942,382,897,399,841,411,716,427,601,433,601,427,716,421,840,406,895,394,939,377,968,357,976,345,979,332,979,128,975,113,965,99,950,87,929,76,874,58,807,45,664,29,549,24"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="465,27,407,40,341,59,295,84,244,117,241,113,293,80,339,55,406,34,470,24"/>
+<area shape="rect" id="Node000008" href="$structnbd_1_1_n_b_d_server_1_1_slot.html" title=" " alt="" coords="497,317,543,345"/>
+<area shape="poly" id="edge16_Node000008_Node000006" title=" " alt="" coords="490,43,470,79,455,116,446,154,443,184,448,214,460,251,481,287,508,317,502,316,477,291,455,253,442,216,438,184,440,153,449,114,465,76,486,47"/>
+<area shape="poly" id="edge15_Node000010_Node000006" title=" " alt="" coords="525,44,543,77,556,115,557,161,553,202,536,226,533,222,548,200,552,160,551,115,538,79,524,49"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="293,115,331,143"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="276,146,225,168,220,183,225,200,247,237,275,271,307,302,341,330,410,375,472,410,467,409,407,380,337,334,303,306,271,275,243,240,220,202,214,183,221,165,280,142"/>
+<area shape="poly" id="edge12_Node000010_Node000007" title=" " alt="" coords="306,155,307,180,316,199,340,213,379,223,472,235,467,236,378,228,338,218,312,202,302,181,304,160"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="522,359,522,411,518,408,518,362"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="594,225,662,252"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="611,263,580,295,545,319,543,315,577,291,606,265"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="522,266,522,318,518,316,518,270"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="821,115,880,143"/>
+<area shape="poly" id="edge17_Node000001_Node000011" title=" " alt="" coords="867,154,874,178,871,202,846,242,815,278,779,310,740,338,661,382,589,412,588,407,659,377,737,333,776,306,811,274,841,239,865,200,869,179,864,159"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="809,146,763,169,734,187,704,203,571,230,570,224,702,198,731,182,761,164,804,148"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="464,115,541,143"/>
+<area shape="poly" id="edge13_Node000010_Node000012" title=" " alt="" coords="505,156,511,200,518,225,513,223,506,201,502,161"/>
+<area shape="rect" id="Node000013" href="$classuint32__t.html" title=" " alt="" coords="683,115,757,143"/>
+<area shape="poly" id="edge18_Node000001_Node000013" title=" " alt="" coords="714,156,700,202,672,260,642,302,562,388,540,412,538,407,558,384,638,299,667,258,695,200,710,160"/>
+<area shape="poly" id="edge14_Node000010_Node000013" title=" " alt="" coords="666,144,642,155,617,169,601,185,586,203,548,227,545,222,582,199,597,181,614,165,640,150,671,142"/>
+</map>

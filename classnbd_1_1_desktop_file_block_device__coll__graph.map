@@ -1,0 +1,13 @@
+<map id="DesktopFileBlockDevice" name="DesktopFileBlockDevice">
+<area shape="rect" id="Node000001" title="Desktop only: exports a disk image file using the C++ standard library. If a size is given,..." alt="" coords="148,115,328,143"/>
+<area shape="rect" id="Node000002" href="$classnbd_1_1_block_device.html" title="Abstract byte addressable block device which is exported by the nbd server. All offsets and lengths a..." alt="" coords="5,5,108,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,39,174,89,217,114,211,115,171,93,89,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="131,5,190,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,44,200,89,224,115,219,114,196,93,171,49"/>
+<area shape="rect" id="Node000004" href="$classuint64__t.html" title=" " alt="" coords="214,5,288,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="244,46,242,57,239,116,235,113,237,57,240,50"/>
+<area shape="rect" id="Node000005" href="$classbool.html" title=" " alt="" coords="342,5,392,33"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="363,46,355,72,340,93,321,107,299,117,298,112,318,102,336,89,350,69,359,50"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="430,5,502,33"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="461,46,451,72,433,93,415,102,390,110,328,121,327,116,388,105,413,97,430,89,446,69,457,49"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="SDMMCBlockDevice" name="SDMMCBlockDevice">
+<area shape="rect" id="Node000001" title="Raw sector access to an SD card driven by the SD_MMC library. Consecutive sectors are transferred wit..." alt="" coords="276,285,429,312"/>
+<area shape="rect" id="Node000002" href="$classnbd_1_1_s_d_raw_block_device.html" title=" " alt="" coords="265,191,440,235"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="354,249,355,286,350,283,351,253"/>
+<area shape="rect" id="Node000003" href="$classnbd_1_1_sector_block_device.html" title="Base class for devices which can only access whole sectors (SD cards, flash). Unaligned byte access i..." alt="" coords="41,98,184,126"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="159,129,302,189,298,191,158,135"/>
+<area shape="rect" id="Node000004" href="$classnbd_1_1_block_device.html" title="Abstract byte addressable block device which is exported by the nbd server. All offsets and lengths a..." alt="" coords="5,5,108,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="73,44,107,97,102,98,72,49"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="131,5,208,33"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="152,49,123,99,118,96,155,44"/>
+<area shape="rect" id="Node000006" href="$classfs_1_1_s_d_m_m_c_f_s_01_6.html" title=" " alt="" coords="208,98,310,126"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="282,134,335,190,329,190,281,139"/>
+<area shape="rect" id="Node000007" href="$classbool.html" title=" " alt="" coords="334,98,384,126"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="356,139,356,150,355,192,350,189,351,149,353,144"/>
+<area shape="rect" id="Node000008" href="$classuint32__t.html" title=" " alt="" coords="414,98,488,126"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="442,138,424,168,394,193,392,188,420,165,438,141"/>
+<area shape="rect" id="Node000009" href="$classuint64__t.html" title=" " alt="" coords="522,98,596,126"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="546,137,533,156,518,169,481,188,441,201,440,196,479,183,515,164,530,152,542,140"/>
+</map>

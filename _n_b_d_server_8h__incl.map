@@ -1,0 +1,29 @@
+<map id="src/nbd&#45;server/NBDServer.h" name="src/nbd&#45;server/NBDServer.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="163,5,363,33"/>
+<area shape="rect" id="Node000002" href="$_n_b_d_session_8h.html" title=" " alt="" coords="207,81,319,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="264,31,265,66,261,64,262,36"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,232,89,260"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="205,107,116,128,77,142,53,158,46,171,42,186,43,217,38,217,37,186,41,170,49,155,74,137,114,123,208,103"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="63,157,135,184"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="232,111,143,152,141,148,236,107"/>
+<area shape="rect" id="Node000005" href="$_block_device_8h.html" title=" " alt="" coords="391,157,506,184"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="296,107,404,150,399,151,296,112"/>
+<area shape="rect" id="Node000009" href="$_n_b_d_logger_8h.html" title=" " alt="" coords="159,157,367,184"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="265,107,265,142,261,140,261,111"/>
+<area shape="rect" id="Node000012" href="$_n_b_d_protocol_8h.html" title="Constants and big&#45;endian helpers for the nbd (Network Block Device) protocol. See https://github...." alt="" coords="529,157,746,184"/>
+<area shape="poly" id="edge12_Node000002_Node000012" title=" " alt="" coords="320,105,558,152,553,154,319,110"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="506,232,577,260"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="466,182,516,223,511,222,464,187"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="414,232,483,260"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="450,183,450,218,446,215,446,187"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="320,232,390,260"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="434,184,384,225,382,220,429,186"/>
+<area shape="poly" id="edge9_Node000009_Node000003" title=" " alt="" coords="225,187,101,230,99,224,224,182"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="132,232,207,260"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="249,184,199,225,197,220,244,186"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="230,232,296,260"/>
+<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="265,183,265,218,261,215,261,187"/>
+<area shape="poly" id="edge14_Node000012_Node000006" title=" " alt="" coords="623,184,572,225,570,220,618,186"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="601,232,674,260"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="640,183,640,218,636,215,636,187"/>
+</map>

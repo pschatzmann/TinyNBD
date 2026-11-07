@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['page_0',['page',['../structnbd_1_1_cached_block_device_1_1_slot.html#a36dd2a008209bea3cef9e0de2d8dfd62',1,'nbd::CachedBlockDevice::Slot']]],
+  ['page_20cache_1',['Page cache',['../md_docs_2configuration.html#autotoc_md19',1,'']]],
+  ['page_5fsize_2',['page_size',['../classnbd_1_1_cached_block_device.html#af91f634fbc8d26e705035b0613f7d077',1,'nbd::CachedBlockDevice']]],
+  ['pagecount_3',['pageCount',['../classnbd_1_1_cached_block_device.html#a491448507f009e86efb97e3188583e37',1,'nbd::CachedBlockDevice']]],
+  ['pagesize_4',['pageSize',['../classnbd_1_1_cached_block_device.html#a2bfbf097822e5f1c60ff747638481849',1,'nbd::CachedBlockDevice']]],
+  ['partition_5',['partition',['../classnbd_1_1_e_s_p32_partition_block_device.html#a98f535e96b9cde61af22bff07fecdee5',1,'nbd::ESP32PartitionBlockDevice::partition'],['../md_docs_2littlefs.html#autotoc_md30',1,'Server side: sharing static files from a LittleFS partition']]],
+  ['partitions_6',['Flash partitions',['../md_docs_2notes.html#autotoc_md48',1,'']]],
+  ['path_7',['path',['../classnbd_1_1_desktop_file_block_device.html#a4d455efceee21e97d8e21ee40e9b4a20',1,'nbd::DesktopFileBlockDevice']]],
+  ['pdrv_8',['pdrv',['../classnbd_1_1_fat_i_o_block_device.html#a12cf63dd60e89915f91cc2e13ca1634e',1,'nbd::FatIOBlockDevice']]],
+  ['performance_9',['performance',['../md_docs_2notes.html#autotoc_md49',1,'Performance'],['../md_docs_2multiple-clients.html#autotoc_md43',1,'Performance']]],
+  ['platformio_10',['PlatformIO',['../index.html#autotoc_md3',1,'']]],
+  ['pool_11',['pool',['../classnbd_1_1_cached_block_device.html#a642613fcbfec0643e54b4191bc8e9438',1,'nbd::CachedBlockDevice']]],
+  ['preferred_5fblock_5fsize_12',['preferred_block_size',['../classnbd_1_1_n_b_d_client.html#a94f5cee86d78f33f88e8ef62abbdbee5',1,'nbd::NBDClient']]],
+  ['preferredblocksize_13',['preferredblocksize',['../classnbd_1_1_cached_block_device.html#a2212d62e035b4f6f8e1741b5337e0b38',1,'nbd::CachedBlockDevice::preferredBlockSize()'],['../classnbd_1_1_n_b_d_client.html#a69dcf363e322dff1112a6816d1b8db78',1,'nbd::NBDClient::preferredBlockSize()'],['../classnbd_1_1_n_b_d_client_sector_block_device.html#a2212d62e035b4f6f8e1741b5337e0b38',1,'nbd::NBDClientSectorBlockDevice::preferredBlockSize()'],['../classnbd_1_1_block_device.html#ad68448c84e3b0276f100afd7906297cd',1,'nbd::BlockDevice::preferredBlockSize()'],['../classnbd_1_1_sector_block_device.html#a2212d62e035b4f6f8e1741b5337e0b38',1,'nbd::SectorBlockDevice::preferredBlockSize()']]],
+  ['processclients_14',['processClients',['../classnbd_1_1_n_b_d_server.html#a6e0227783c913a3e28a3018e5e810ed5',1,'nbd::NBDServer']]],
+  ['processinfo_15',['processInfo',['../classnbd_1_1_n_b_d_session.html#a541eca56586ce046095d940bafffe391',1,'nbd::NBDSession']]],
+  ['processread_16',['processRead',['../classnbd_1_1_n_b_d_session.html#afa5847e7351cedf93498dc382faf0430',1,'nbd::NBDSession']]],
+  ['processrequest_17',['processRequest',['../classnbd_1_1_n_b_d_session.html#a719bc94da5c44efd9adb5bfa5fab0c90',1,'nbd::NBDSession']]],
+  ['prog_18',['prog',['../classnbd_1_1_n_b_d_little_f_s.html#a8ed833607b594cddb9b4b05d4ba94072',1,'nbd::NBDLittleFS']]],
+  ['project_19',['Using the library in your own CMake project',['../md_docs_2desktop.html#autotoc_md26',1,'']]],
+  ['putbe16_20',['putBE16',['../namespacenbd.html#ab5b71768d3aeb049816a965d13f7a89d',1,'nbd']]],
+  ['putbe32_21',['putBE32',['../namespacenbd.html#a3dc1b0054d7381e80971f68f509d601d',1,'nbd']]],
+  ['putbe64_22',['putBE64',['../namespacenbd.html#a00eb7fa049a984195a0cba7840bac299',1,'nbd']]]
+];

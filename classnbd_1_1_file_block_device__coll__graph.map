@@ -1,0 +1,9 @@
+<map id="FileBlockDevice&lt; FileT &gt;" name="FileBlockDevice&lt; FileT &gt;">
+<area shape="rect" id="Node000001" title="Exports a disk image file. Works with any Arduino File like class (fs::File for SD,..." alt="" coords="71,98,258,126"/>
+<area shape="rect" id="Node000002" href="$classnbd_1_1_block_device.html" title="Abstract byte addressable block device which is exported by the nbd server. All offsets and lengths a..." alt="" coords="5,5,108,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,41,151,96,146,98,83,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="131,5,198,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="167,46,167,99,162,96,162,50"/>
+<area shape="rect" id="Node000004" href="$classbool.html" title=" " alt="" coords="221,5,270,33"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="226,44,178,100,175,96,221,46"/>
+</map>

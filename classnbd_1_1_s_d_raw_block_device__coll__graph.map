@@ -1,0 +1,17 @@
+<map id="SDRawBlockDevice&lt; SDT &gt;" name="SDRawBlockDevice&lt; SDT &gt;">
+<area shape="rect" id="Node000001" title="Exports a whole SD card on sector level (the client sees the partition table and file systems)...." alt="" coords="210,191,415,218"/>
+<area shape="rect" id="Node000002" href="$classnbd_1_1_sector_block_device.html" title="Base class for devices which can only access whole sectors (SD cards, flash). Unaligned byte access i..." alt="" coords="41,98,184,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,130,286,189,281,191,155,135"/>
+<area shape="rect" id="Node000003" href="$classnbd_1_1_block_device.html" title="Abstract byte addressable block device which is exported by the nbd server. All offsets and lengths a..." alt="" coords="5,5,108,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="73,44,107,97,102,98,72,49"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="131,5,208,33"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="155,44,123,99,119,96,152,48"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="208,98,270,126"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="261,136,305,191,299,190,258,140"/>
+<area shape="rect" id="Node000006" href="$classbool.html" title=" " alt="" coords="294,98,344,126"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="316,139,316,150,315,192,310,189,311,149,313,143"/>
+<area shape="rect" id="Node000007" href="$classuint32__t.html" title=" " alt="" coords="374,98,448,126"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="403,139,384,169,347,193,345,188,380,165,398,141"/>
+<area shape="rect" id="Node000008" href="$classuint64__t.html" title=" " alt="" coords="482,98,556,126"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="506,138,494,156,478,169,448,184,416,194,415,189,446,179,475,164,490,152,502,140"/>
+</map>
