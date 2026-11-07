@@ -5,7 +5,7 @@ body:
     attributes:
       value: |
         * Before reporting a new bug please check and search the [list of existing issues](https://github.com/pschatzmann/TinyNBD/issues?q=) 
-        * Please check [the Readme](https://github.com/pschatzmann/TinyNBD) and [docs](https://github.com/pschatzmann/TinyNBD/tree/main/docs)
+        * Please check [the Readme](https://github.com/pschatzmann/TinyNBD) and [Wiki](https://github.com/pschatzmann/TinyNBD/wiki)
         * Don't forget to check [the discusions](https://github.com/pschatzmann/TinyNBD/discussions)
         * If still experiencing the issue, please provide as many details as possible below about your hardware, computer setup and code.
   - type: textarea
@@ -51,7 +51,7 @@ body:
   - type: checkboxes
     id: confirmation
     attributes:
-      label: I have checked existing issues, discussions and online documentation (incl. the docs)
+      label: I have checked existing issues, discussions and online documentation (incl. the Wiki)
       description: You agree to check all the resources above before opening a new issue.
       options:
         - label: I confirm I have checked existing issues, discussions and online documentation
