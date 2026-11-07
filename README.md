@@ -44,7 +44,9 @@ Server and client examples are in [examples/](examples/). See the documents belo
 
 ## Documentation
 
-The documentation is in the [Wiki](https://github.com/pschatzmann/TinyNBD/wiki). The API of all classes is described in the [Doxygen class documentation](https://pschatzmann.github.io/TinyNBD/).
+The documentation is in the [Wiki](https://github.com/pschatzmann/TinyNBD/wiki). 
+
+- [Doxygen class documentation](https://pschatzmann.github.io/TinyNBD/annotated.html).
 
 - [NBD Server](https://github.com/pschatzmann/TinyNBD/wiki/NBD-Server): exporting storage, block devices, server example and Linux/qemu clients.
 - [NBD Client](https://github.com/pschatzmann/TinyNBD/wiki/NBD-Client): API and example for reading and writing an export from an Arduino.
@@ -54,3 +56,4 @@ The documentation is in the [Wiki](https://github.com/pschatzmann/TinyNBD/wiki).
 - [Usage Notes](https://github.com/pschatzmann/TinyNBD/wiki/Usage-Notes): SD card access, flash wear, performance and security. Read this before using the library.
 - [Accessing an Export from Several Machines](https://github.com/pschatzmann/TinyNBD/wiki/Multiple-Clients): what is safe when several clients share an export, and how to set this up.
 - [Running on the Desktop](https://github.com/pschatzmann/TinyNBD/wiki/Desktop): running the library on Linux, macOS and Windows with the Arduino Emulator; CMake build, desktop examples, tests and `DesktopFileBlockDevice`.
+
