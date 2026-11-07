@@ -99,8 +99,9 @@ Usage</h1>
 <p>Server and client examples are in <a href="examples/">examples/</a>. See the documents below for details. <a href="examples/nbd-client-tinyfatfs/nbd-client-tinyfatfs.ino">examples/nbd-client-tinyfatfs</a> mounts a remote export as a FAT filesystem using the <a href="https://github.com/pschatzmann/TinyFATFS">TinyFATFS</a> library's <code>NBDClientIO</code> driver, and <a href="examples/nbd-client-littlefs/nbd-client-littlefs.ino">examples/nbd-client-littlefs</a> mounts one as a LittleFS filesystem with <code>NBDLittleFS</code> (<code><a class="el" href="_n_b_d___little_f_s_8h.html" title="Mounts a remote nbd export as LittleFS: include this instead of NBD.h. Requires the 107-Arduino-littl...">NBD_LittleFS.h</a></code>, requires the 107-Arduino-littlefs library). The <a href="https://github.com/pschatzmann/TinyEXT4">TinyEXT4</a> library provides an <code>NBDClientIO</code> driver as well, which mounts a remote export as an ext4 filesystem (see its <a href="https://github.com/pschatzmann/TinyEXT4/tree/main/examples/nbd-client">nbd-client</a> example).</p>
 <h1><a class="anchor" id="autotoc_md5"></a>
 Documentation</h1>
-<p>The documentation is in the <a href="https://github.com/pschatzmann/TinyNBD/wiki">Wiki</a>. The API of all classes is described in the <a href="https://pschatzmann.github.io/TinyNBD/">Doxygen class documentation</a>.</p>
+<p>The documentation is in the <a href="https://github.com/pschatzmann/TinyNBD/wiki">Wiki</a>.</p>
 <ul>
+<li><a href="https://pschatzmann.github.io/TinyNBD/annotated.html">Doxygen class documentation</a>.</li>
 <li><a href="https://github.com/pschatzmann/TinyNBD/wiki/NBD-Server">NBD Server</a>: exporting storage, block devices, server example and Linux/qemu clients.</li>
 <li><a href="https://github.com/pschatzmann/TinyNBD/wiki/NBD-Client">NBD Client</a>: API and example for reading and writing an export from an Arduino.</li>
 <li><a href="https://github.com/pschatzmann/TinyNBD/wiki/Configuration">Configuration</a>: compile-time limits, buffer size, timeout and namespace options.</li>
