@@ -54,6 +54,6 @@ The documentation is in the [Wiki](https://github.com/pschatzmann/TinyNBD/wiki).
 - [TinyFATFS](https://github.com/pschatzmann/TinyNBD/wiki/TinyFATFS): how the TinyFATFS library relates to this one: `NBDClientIO` (NBD as a FAT drive) and `FatIOBlockDevice` (a FAT drive as an NBD export).
 - [LittleFS](https://github.com/pschatzmann/TinyNBD/wiki/LittleFS): sharing static files from a LittleFS flash partition that is uploaded with the sketch (recommended, read-only), and mounting an export with `NBDLittleFS` or littlefs-fuse.
 - [Usage Notes](https://github.com/pschatzmann/TinyNBD/wiki/Usage-Notes): SD card access, flash wear, performance and security. Read this before using the library.
-- [Accessing an Export from Several Machines](https://github.com/pschatzmann/TinyNBD/wiki/Multiple-Clients): what is safe when several clients share an export, and how to set this up.
-- [Running on the Desktop](https://github.com/pschatzmann/TinyNBD/wiki/Desktop): running the library on Linux, macOS and Windows with the Arduino Emulator; CMake build, desktop examples, tests and `DesktopFileBlockDevice`.
+- [Accessing an Export from Several Machines](https://github.com/pschatzmann/TinyNBD/wiki/Accessing-an-Export-from-Several-Machines): what is safe when several clients share an export, and how to set this up.
+- [Running on the Desktop](https://github.com/pschatzmann/TinyNBD/wiki/Running-on-the-Desktop): running the library on Linux, macOS and Windows with the Arduino Emulator; CMake build, desktop examples, tests and `DesktopFileBlockDevice`.
 
